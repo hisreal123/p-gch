@@ -9,7 +9,7 @@ const VideoPlayer = () => {
         src="./assets/churchVideo.mp4"
         className="h-screen w-screen object-cover"
         loop
-        // autoPlay={true}
+        autoPlay={true}
         muted
       />
     </div>
