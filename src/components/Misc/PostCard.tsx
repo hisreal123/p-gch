@@ -14,7 +14,7 @@ export const PostCard = ({post}: any) => {
 
 				<div className=''>
 					<Link to={`/read/${post.title}`}>
-						<img src={post.image}  className=' h-[200px] w-full relative object-cover' />
+						<img src={post.image}  className=' h-[200px] w-full relative object-cover' alt='post image ' />
 					</Link>
 					</div>
 				<div className=' px-3 py-3'>
@@ -45,8 +45,7 @@ export const PostCard = ({post}: any) => {
 				</div>
 
 						<Link to={`/read/${post.title}`}  className=''>
-							<span className='text-xs md:text-sm flex items-center border-b w-fit  pb-1'>
-							 Continue Reading
+							<span className='text-xs md:text-sm flex items-center border-b w-fit  pb-1'>Continue Reading
 							<BiChevronRight />
 							</span>
 						</Link>
