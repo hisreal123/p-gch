@@ -27,17 +27,13 @@ export const Read = () => {
 									<h1 className='text-gray-700 font-bold my-5 text-2xl'>{p.title}</h1>
 
 									<p className='flex items-center justify-around text-[10px] md:text-md space-x-2'>
-										<span className='flex items-center'>
-										  <FaRegFolderOpen className='mr-1 text-sm' />
-											{p.author}
+										<span className='flex items-center'><FaRegFolderOpen className='mr-1 text-sm' />{p.author}
 										</span>
 															|
-										<span className='flex items-center'>
-                     					 	<BsCalendar3 className='mr-2 text-sm' />
+										<span className='flex items-center'><BsCalendar3 className='mr-2 text-sm' />
 											{p.date}
 										</span>|
-										<span className='flex items-center'>
-								 				 <BsFillCupHotFill className='mr-2 text-sm' />
+										<span className='flex items-center'><BsFillCupHotFill className='mr-2 text-sm' />
 											{p.readingTime}
 										</span>
 									</p>
@@ -58,8 +54,7 @@ export const Read = () => {
 									</div>
 
 									<Link to={`/`} className=''>
-										<span className='text-sm md:text-sm flex items-center border-b w-fit pb-1 mb-4 mt-10'>
-										  <BiChevronLeft /> Other Post
+										<span className='text-sm md:text-sm flex items-center border-b w-fit pb-1 mb-4 mt-10'><BiChevronLeft /> Other Post
 										</span>
 									</Link>
 								</div>
