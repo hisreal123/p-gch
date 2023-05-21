@@ -13,6 +13,12 @@ export const SideBarNav = ({ liStyle, style }: SideBarNavProps) => {
 		<ul className={` ${style}`}>
 
 			<li>
+				<Link to='/online' target="_blank" className={`${liStyle} flex items-center  text-white opacity-70 hover:opacity-100 duration-300 font-light`} >
+                   <BiChurch  className='mr-3 text-lg'/>
+					<p>Online</p>
+				</Link>
+			</li>
+			<li>
 				<Link to='/about' className={`${liStyle} flex items-center  text-white opacity-70 hover:opacity-100 duration-300 font-light`} >
                    <BiChurch  className='mr-3 text-lg'/>
 					<p>ABOUT</p>
@@ -23,18 +29,8 @@ export const SideBarNav = ({ liStyle, style }: SideBarNavProps) => {
 					<CgProfile />
 					<p >CONTACT US</p>
 				</Link>
-			</li>	<li>
-				<Link to='/connect' className={`${liStyle} flex items-center  text-white opacity-70 hover:opacity-100 duration-300 font-light`} >
-					<CgProfile />
-					<p >CONNECT</p>
-				</Link>
 			</li>
-			<li>
-				<Link to='/watch' className={`${liStyle} flex items-center  text-white opacity-70 hover:opacity-100 duration-300 font-light`}>
 
-					WATCH
-				</Link>
-			</li>
 
 			<li>
 				<Link to='/care' className={`${liStyle} flex items-center  text-white opacity-70 hover:opacity-100 duration-300 font-light`} >

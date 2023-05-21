@@ -11,15 +11,20 @@
   },
   "dependencies": {
     "@material-tailwind/react": "^2.0.1",
+    "@react-pdf/renderer": "^3.1.9",
     "@reduxjs/toolkit": "^1.9.5",
     "axios": "^1.4.0",
+    "draft-js": "^0.11.7",
     "framer-motion": "^10.12.12",
+    "moment-timezone": "^0.5.43",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+    "react-player": "^2.12.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.11.1",
-    "react-slick": "^0.29.0"
+    "react-slick": "^0.29.0",
+    "react-tabs": "^6.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

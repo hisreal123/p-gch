@@ -9,11 +9,11 @@ import {Home} from "../routes/views/Home";
 import ContactUs from "../routes/views/ContactUs";
 import {ErrorRoute} from "../routes/views/Error";
 import {About} from "../routes/views/About";
-import {Connect} from "../routes/views/Connect";
-import {Watch} from "../routes/views/Watch";
+// import {Watch} from "../routes/views/Watch";
 import {Care} from "../routes/views/Care";
 import {Give} from "../routes/views/Give";
 import {Blog} from "../routes/views/Blog";
+
 
 import {Layout} from "../components/Misc/Layout.tsx";
 
@@ -21,6 +21,10 @@ import {Layout} from "../components/Misc/Layout.tsx";
 import {Bulletin} from "../routes/views/Blog/Bulletin";
 import {BlbleReading} from "../routes/views/Blog/BlbleReading";
 import {Read} from "../routes/views/Blog/Read.tsx";
+
+
+// Online
+import {Online} from "../routes/views/Online/Online.tsx";
 
 
 const router = createBrowserRouter([
@@ -33,22 +37,23 @@ const router = createBrowserRouter([
 			{
 				path: "/",
 				element: <Home />,
-			},{
+			},
+			{
 				path: "/about",
 				element: <About />,
 			},
 			{
-				path: "/connect",
-				element: <Connect />,
+				path: "/online",
+				element: <Online />,
 			},
 			{
 				path: "/contact",
 				element: <ContactUs />,
 			},
-			{
-				path: "/watch",
-				element: <Watch />,
-			},
+			// {
+			// 	path: "/watch",
+			// 	element: <Watch />,
+			// },
 			{
 				path: "/care",
 				element: <Care />,

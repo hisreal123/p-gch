@@ -2,11 +2,14 @@
 
 import {MdLocationOn} from "react-icons/all";
 import ABanner from "../../components/ABanner.tsx";
+import Header from "../../components/Header.tsx";
+import Footer from "../../components/Footer.tsx";
 
 export default function ContactUs() {
     return (
         <>
             <section className='w-full '>
+                <Header ShowHeader={true} />
                  <ABanner caption='Contact Us'/>
 
                 <div className=" px-10 py-4 bg-white ">
@@ -60,6 +63,7 @@ export default function ContactUs() {
                      LOCATE SMALL GROUP
                  </button>
              </div>
+                <Footer ShowFooter={true} />
             </section>
         </>
     )

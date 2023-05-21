@@ -8,9 +8,15 @@ import {
     ytColor
 } from './SvgIcons/SvgIcons'
 
-export default function Footer() {
+type FooterProps = {
+    ShowFooter : boolean
+}
+
+export default function Footer({ShowFooter} : FooterProps) {
     return (
         <>
+            {ShowFooter
+                    && (
             <section className='bg-gray-800 text-white/70  py-2 md:py-10 px-5 '>
                 <div className='md:w-[80%] md:mx-auto'>
                     <footer className="relative w-full ">
@@ -73,6 +79,7 @@ export default function Footer() {
                     </footer>
                 </div>
             </section>
+                )}
         </>
     )
 }

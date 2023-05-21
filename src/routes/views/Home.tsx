@@ -12,7 +12,8 @@ import Events from "../../components/Events.tsx";
 import {Link} from "react-router-dom";
 import {BsPlay} from "react-icons/bs";
 import More from "../../components/More.tsx";
-import ContactUs from "./ContactUs.tsx";
+import Footer from "../../components/Footer.tsx";
+import Newsletter from "../../components/Newsletter.tsx";
 
 const CardListProp: t[] = [
 	{
@@ -41,7 +42,7 @@ export const Home = () => {
 		<>
 			<section className='overflow-hidden '>
 				<SideBarContext.Provider value={{ Open, setOpen }}>
-					<Header />
+					<Header ShowHeader={true}/>
 					<Sidebar />
 				</SideBarContext.Provider>
 			<main className="w-screen overflow-hidden relative">
@@ -96,8 +97,9 @@ export const Home = () => {
 				</section>
 
 				<More />
-				<ContactUs />
+				<Newsletter />
 			</main>
+				<Footer ShowFooter={true} />
 			</section>
 		</>
 	)

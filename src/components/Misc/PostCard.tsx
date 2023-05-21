@@ -12,7 +12,7 @@ export const PostCard = ({post}: any) => {
 			<div className=' border mb-5 bg-white hover:bg-gray-100 justify-between h-fit '>
 				<div className='top'>
 
-				<div className=''>
+				<div className=' hover:bg-black/100 hover:mix-blend-multiply'>
 					<Link to={`/read/${post.title}`}>
 						<img src={post.image}  className=' h-[200px] w-full relative object-cover' alt='post image ' />
 					</Link>
@@ -20,7 +20,7 @@ export const PostCard = ({post}: any) => {
 				<div className=' px-3 py-3'>
 					<div>
 						<Link to={`/read/${post.title}`}>
-							<h1 className='text-gray-700 font-bold  text-xl mb-2 '>{post.title}.</h1>
+							<h1 className='text-gray-700 font-bold  text-xl mb-2 line-clamp-1'>{post.title}.</h1>
 						</Link>
 
 						<p className='flex items-center justify-around text-[10px] md:text-md space-x-2 '>
