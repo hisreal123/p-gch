@@ -9,22 +9,22 @@ export const PostCard = ({post}: any) => {
 	return (
 		<>
 
-			<div className=' border mb-5 bg-white hover:bg-gray-100 justify-between h-fit '>
+			<div className=' border mb-5 bg-white hover:bg-gray-100 justify-between h-fit' key={post.title}>
 				<div className='top'>
 
 				<div className=' hover:bg-black/100 hover:mix-blend-multiply'>
-					<Link to={`/read/${post.title}`}>
+					<Link to={`/blog/read/${post.title}`}>
 						<img src={post.image}  className=' h-[200px] w-full relative object-cover' alt='post image ' />
 					</Link>
 					</div>
 				<div className=' px-3 py-3'>
 					<div>
-						<Link to={`/read/${post.title}`}>
+						<Link to={`/blog/read/${post.title}`}>
 							<h1 className='text-gray-700 font-bold  text-xl mb-2 line-clamp-1'>{post.title}.</h1>
 						</Link>
 
 						<p className='flex items-center justify-around text-[10px] md:text-md space-x-2 '>
-							<Link to={`/read/${post.title}`} className='flex items-center'>
+							<Link to={`/blog/read/${post.title}`} className='flex items-center'>
 								<FaRegFolderOpen className=' mr-1 text-sm '/>
 								{post.author}
 							</Link>
@@ -44,7 +44,7 @@ export const PostCard = ({post}: any) => {
 						</div>
 				</div>
 
-						<Link to={`/read/${post.title}`}  className=''>
+						<Link to={`/blog/read/${post.title}`}  className=''>
 							<span className='text-xs md:text-sm flex items-center border-b w-fit  pb-1'>Continue Reading
 							<BiChevronRight />
 							</span>

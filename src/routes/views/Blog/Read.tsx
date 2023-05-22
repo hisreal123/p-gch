@@ -53,7 +53,7 @@ export const Read = () => {
 										</div>
 									</div>
 
-									<Link to={`/`} className=''>
+									<Link to="/blog" className=''>
 										<span className='text-sm md:text-sm flex items-center border-b w-fit pb-1 mb-4 mt-10'><BiChevronLeft /> Other Post
 										</span>
 									</Link>

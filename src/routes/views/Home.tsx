@@ -14,6 +14,7 @@ import {BsPlay} from "react-icons/bs";
 import More from "../../components/More.tsx";
 import Footer from "../../components/Footer.tsx";
 import Newsletter from "../../components/Newsletter.tsx";
+// import {Believer} from "../../components/Modal/Believer.tsx";
 
 const CardListProp: t[] = [
 	{
@@ -37,10 +38,11 @@ const CardListProp: t[] = [
 
 export const Home = () => {
 	const [Open, setOpen] = useState(false)
+	// const [openBeliever, setOpenBeliever] = useState(false);
 
 	return (
 		<>
-			<section className='overflow-hidden '>
+			<section className='overflow-hidden relative'>
 				<SideBarContext.Provider value={{ Open, setOpen }}>
 					<Header ShowHeader={true}/>
 					<Sidebar />
@@ -83,7 +85,14 @@ export const Home = () => {
 
 
 				{/*<more information />*/}
-				<section className=' bg-blue-950 py-10 '>
+
+				<section className=''>
+					<div>
+
+					</div>
+
+
+				<div className=' bg-blue-950 py-10 '>
 					<div className='px-10 flex flex-col md:flex-row items-center justify-center space-x-10'>
 						<Link className="" to="/">
 							<img src='./assets/logo.png' height="120" width="120 " alt='logo'/>
@@ -94,6 +103,29 @@ export const Home = () => {
 							<p className='text-sm  md:text-lg'>Click for more information</p>
 						</a>
 						</div>
+				</div>
+
+				</section>
+
+
+
+				{/*Become a believer */}
+				<section>
+					{/*<Believer open={openBeliever} />*/}
+					<div className=' bg-url md:px-10 px-2  h-[300px] w-full bg-gray-200/50'>
+						<div className='flex flex-col md:flex-row md:justify-around items-center justify-center h-full  mx-auto bg-gray-200/50 '>
+							<div className=''>
+								<h1 className='md:text-4xl md:w-[50%] text-xl text-center
+								md:text-left mb-2 md:mb-0'>Ready to begin this New Experience with Christ?</h1>
+							</div>
+							<div className='group'>
+								<button className='text-sm px-3 py-2 md:px-5 md:py-4 rounded-full text-white font-bold
+								md:text-xl bg-black md:group-hover:-translate-y-5 transition-all duration-200
+								md:group-hover:text-gray-800 md:group-hover:bg-white '// onClick={() => setOpenBeliever(true)}
+								>BECOME A BELIEVER</button>
+							</div>
+						</div>
+					</div>
 				</section>
 
 				<More />

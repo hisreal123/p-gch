@@ -1,12 +1,15 @@
 
 
-const VideoPlayer = () => {
+type VideoPlayerProps =  {
+    videoUrl ?: string
+}
+const VideoPlayer = ({videoUrl} : VideoPlayerProps) => {
 
 
   return (
     <div className='vBackground -z-50 '>
       <video
-        src="./assets/churchVideo.mp4"
+        src={videoUrl ? videoUrl : './assets/churchVideo.mp4' }
         className="h-screen w-screen object-cover"
         loop
         autoPlay={true}

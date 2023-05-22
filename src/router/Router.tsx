@@ -10,7 +10,7 @@ import ContactUs from "../routes/views/ContactUs";
 import {ErrorRoute} from "../routes/views/Error";
 import {About} from "../routes/views/About";
 // import {Watch} from "../routes/views/Watch";
-import {Care} from "../routes/views/Care";
+// import {Care} from "../routes/views/Care";
 import {Give} from "../routes/views/Give";
 import {Blog} from "../routes/views/Blog";
 
@@ -25,6 +25,9 @@ import {Read} from "../routes/views/Blog/Read.tsx";
 
 // Online
 import {Online} from "../routes/views/Online/Online.tsx";
+import {Login} from "../routes/views/Auths/Login.tsx";
+import {Register} from "../routes/views/Auths/Register.tsx";
+import {ForgotPassword} from "../routes/views/Auths/ForgotPassword.tsx";
 
 
 const router = createBrowserRouter([
@@ -49,19 +52,30 @@ const router = createBrowserRouter([
 			{
 				path: "/contact",
 				element: <ContactUs />,
+			},{
+				path: "/auth/login",
+				element: <Login />,
+			},{
+				path: "/auth/register",
+				element: <Register />,
+			},{
+				path: "/auth/reset/forgot",
+				element: <ForgotPassword />,
 			},
 			// {
 			// 	path: "/watch",
 			// 	element: <Watch />,
 			// },
-			{
-				path: "/care",
-				element: <Care />,
-			},
+			// {
+			// 	path: "/care",
+			// 	element: <Care />,
+			// },
 			{
 				path: "/give",
 				element: <Give />,
 			},
+
+			// Blog Router
 			{
 				path: "/blog",
 				element: <Blog />,
@@ -77,10 +91,10 @@ const router = createBrowserRouter([
 					},
 				]
 			},
-			{
-				path: "/read/:title",
-				element: <Read />,
-			},
+					{
+						path: "/blog/read/:title",
+						element: <Read />,
+					},
 		]
 
 	}

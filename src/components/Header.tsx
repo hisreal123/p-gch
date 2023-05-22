@@ -42,6 +42,7 @@ export default function Header({ShowHeader} : HeaderProps) {
   const backgroundColor = scrollY > 100 ? 'bg-white shadow-lg' : 'transparent';
   const menuChange = scrollY > 100  ? 'text-black' : 'text-white';
 
+  const pickScolled  = scrollY > 100 ? true : false;
 
   return (
       <>
@@ -51,11 +52,12 @@ export default function Header({ShowHeader} : HeaderProps) {
 
                   {/* logo here*/}
                   <Link className="" to="/">
-                    <img src='./assets/logo.png' height="100" width="120" />
+                    <img src='./assets/logo.png' height="100" width="120" alt='image ' />
                   </Link>
 
                   {/* menu Links */}
                   <SideBarNav
+                      scrolled={pickScolled}
                       style='hidden px-10 py-16 bg-gray-800 z-10
                         md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6'
                       liStyle='md:text-xs' />
